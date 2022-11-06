@@ -1,0 +1,35 @@
+<html lang="en">
+    <title>Register</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="module" src="./bundle.js"></script> 
+<body>
+    <h2 class="Register">Register A New User</h2>
+    <div id="Fields">
+        <form id="regform" action="bundle" method="post" >
+            <input id="Name" type="text" name="Name" placeholder="Name" title="Please Enter your Name"> 
+            <input type="text" name="email" id="email" placeholder="Email Id" title="Enter your Email-Id">
+            <input type="text" name="Degree" id="Degreee" placeholder="Your Medical Degree" title="Please enter your Degree">
+            <input id="UserName" type="text" name="Username" placeholder="User Name"> 
+            <input id="Password" type="password" name="Password" placeholder="Password" title="Please enter a Strong Password">
+            <input type="password" name="ReEnter" id="2ndPassword" placeholder="Confirm Password" title="Please re-enter the password to confirm"> <br><br>
+            <select name="Gender" id="Gender" placeholder="Gender" title="Select Your gender"> 
+                <option value="" disabled selected hidden>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Prefer not to respond">Prefer not to respond</option>
+            </select> 
+            <select id="year" title="Choose the year You started practicing ">
+                <option value="" disabled selected hidden>Year of Started Practicing</option>
+            </select> 
+            <input type="date" name="D.O.B" id="DOB" title="Enter Your Date Of Birth">
+            <br>    
+            <input id="Address" type="text" name="Address" placeholder="Address of your Clinic">
+            <br><br>
+            <button type="button" value="submit" id="RegBtn"> Register </button> 
+            
+        </form>
+    </div>
+</body>
+    
+    
+</html>
