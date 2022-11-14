@@ -1,0 +1,210 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.h1{
+    color: black;
+}
+body{
+    background: linear-gradient(#27496D , #0C7B93 , #00A8cc);
+}
+#navbar{
+    width: 100%;
+    min-height: 50px;
+    background: linear-gradient(#27496D , #0C7B93 , #00A8cc);
+    color: white;
+    line-height: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: right;
+}
+ul.list{
+    text-decoration-line: none;
+}
+ul.list1 > li{
+    display: inline-block;   
+    font-weight: bolder; 
+    margin-inline: 5px;
+}
+ul.list1 > li > a{
+    text-decoration: none;
+    color: white;
+}
+ul.list1 > li > a:hover{
+    background-color: #F28D8D;
+    border: 20px #F28D8D;
+    border-radius: 5px;
+    min-block-size: 80%;
+    transform: scale(5,0);
+    transition: background-color .5s ease;
+}
+#main{
+    margin-top: 2px;
+    box-sizing: border-box;
+    padding-left: 45%;
+    padding-top: 250px;
+    font-weight: 900;
+    font-size: large;
+    color: white;
+    background-color: #42B4BE;
+    min-height: 80%;
+    background-image: url('BG2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+p.Description{
+    margin-top: 3%;
+    font-weight: 600;
+    min-width: 50px;
+    padding-right: 50px;
+}
+
+
+/*                                                               For Register Page                                                        */
+/*#fields{
+    margin-top: 2%;
+    text-align: center;   
+    min-height: 250px;
+    margin: auto;
+    margin-top: 10%;
+    width: 25%;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2.5%;
+    box-sizing: content-box;
+
+}*/
+.box{
+    margin-top: 2%;
+    text-align: center;   
+    min-height: 250px;
+    margin: auto;
+    margin-top: 10%;
+    width: 25%;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 10px;
+    padding: 2.5%;
+    box-sizing: content-box;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: #000000;
+}
+.box .SFields{
+    margin-top: 2%;
+    text-align: center;   
+    min-height: 250px;
+    margin: auto;
+    margin-top: 10%;
+    width: 25%;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 10px;
+    padding: 2.5%;
+    box-sizing: content-box;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: #000000;
+}
+select{
+    width: auto;
+    height: auto;
+    border: hidden;
+    text-align: center;
+    color: black;
+    border-bottom: 10px black;
+    outline: none;
+    outline-width: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px;
+
+}
+input{
+    border: hidden;
+    text-align: center;
+    color: black;
+    border-bottom: 10px black;
+    outline: none;
+    outline-width: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 3px;
+}
+#Address{
+    box-sizing: border-box;
+    min-height: 75px;
+    word-wrap: break-word;
+}
+h2.Register{
+    color: white;
+    min-height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    text-align: center;
+}
+/*#RegBtn{
+    cursor: pointer;
+    background-color: #42B4BE;
+    color: white;
+    border: white;
+    height: 25px;
+    border: #3A9DA6;
+    border-radius: 10px;
+    padding: 5px;
+}
+*/
+#SignIn{
+    font-size: 12.5px;
+    cursor: pointer;
+    background-color: #42B4BE;
+    color: white;
+    border: white;
+    height: 25px;
+    border: #3A9DA6;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration-line: none;
+}
+
+/*    For Sign In page    */
+#SFields{
+    margin-top: 2%;
+    text-align: center;   
+    min-height: 125px;
+    margin: auto;
+    margin-top: 10%;
+    width: 15%;
+    box-sizing: border-box;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 2.5%;
+    box-sizing: content-box;
+
+}
+button{
+    cursor: pointer;
+    padding: 8px 15px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+    background-color: #00A8cc;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.link a{
+    font-weight: 600;
+    text-decoration: none;
+    color: #00A8cc;
+}

@@ -1,5 +1,5 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth , createUserWithEmailAndPassword , signInWithEmailAndPassword } from 'firebase/auth';
+import { initializeApp  } from 'firebase/app';
+import { getAuth , createUserWithEmailAndPassword , uid } from 'firebase/auth';
 import { getDatabase, ref , set} from 'firebase/database';
 
 //initialization
@@ -20,28 +20,26 @@ const auth = getAuth(firebaseapp);
 const Database = getDatabase(firebaseapp);
 
 
-document.getElementById('RegBtn').addEventListener('click' , Register );
+if(document.getElementById('RegBtn') != null){
+    document.getElementById('RegBtn').addEventListener('click' , Register );
+}
 function Register(){
 
     const Email = document.getElementById("email").value;
-    const UserName = document.getElementById("UserName").value;
     const Password = document.getElementById("Password").value;
     const Address = document.getElementById("Address").value;
     const Name = document.getElementById("Name").value;
     const ReEnter = document.getElementById("2ndPassword").value;
-    const Gender = document.getElementById("Gender").value;
-    const DOB = document.getElementById("DOB").value;
-    const PracticingYear = document.getElementById("year").value;
 
     //Calculating Experiance
-    const Y = new Date();
-    const Experiance = Y.getFullYear() - PracticingYear;
+   /* const Y = new Date();
+    const Experiance = Y.getFullYear() - PracticingYear;*/
 
     if(validateEmail(Email)== false){
         alert("Mail ID is not valid... Check it again");
         return;
     }
-    if( validateFeild(Name , UserName , Address) == false){
+    if( validateFeild(Name , Address) == false){
         alert("Name , User Name , Address... \n One of the feild is not valid Check it again...");
         return;
     }
@@ -59,13 +57,9 @@ function Register(){
         const userId = Doctor.uid;
 
     set(ref(Database, 'Doctors/' + userId), {
-        username: UserName,
         email: Email,
         address: Address,
         name: Name,
-        experiance: Experiance,
-        gender: Gender,
-        dob: DOB
     });
 
     alert("User Created Successfully!!");
@@ -82,7 +76,7 @@ if(exp.test(Email) == true){
 }
 function validatePassword(Password){
 
-if(Password == UserName || Password == Name || Password.length < 6 ){
+if(Password == Name || Password.length < 6 ){
     return false;
 }else{
     return true;
@@ -96,10 +90,11 @@ if(Password != ReEnter){
 }
 } 
 
-function validateFeild(Name , UserName , Address){
-if(Name == null || UserName == null || Address == null ){
+function validateFeild(Name , Address){
+if(Name == null || Address == null ){
     return false;
 }else{
     return true;
 }
 }
+

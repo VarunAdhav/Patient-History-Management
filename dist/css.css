@@ -1,161 +1,146 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
+    /*colors:  1:#142850* 2:#27496D 3:#0C7B93 4:#00A8cc*/
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-.h1{
-    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 body{
-    background-color: white;
-}
-#navbar{
-    width: 100%;
-    min-height: 50px;
-    background-color: #3A9DA6;
-    color: white;
-    line-height: 50px;
-    padding-left: 2%;
-    padding-right: 2%;
-    text-align: right;
-}
-ul.list{
-    text-decoration-line: none;
-}
-ul.list1 > li{
-    display: inline-block;   
-    font-weight: bolder; 
-    margin-inline: 5px;
-}
-ul.list1 > li > a{
-    text-decoration: none;
-    color: white;
-}
-ul.list1 > li > a:hover{
-    background-color: #F28D8D;
-    border: 20px #F28D8D;
-    border-radius: 5px;
-    min-block-size: 80%;
-    transform: scale(5,0);
-    transition: background-color .5s ease;
-}
-#main{
-    margin-top: 2px;
-    box-sizing: border-box;
-    padding-left: 45%;
-    padding-top: 250px;
-    font-weight: 900;
-    font-size: large;
-    color: white;
-    background-color: #42B4BE;
-    min-height: 80%;
-    background-image: url('BG2.jpg');
-    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: linear-gradient(to left , ##1E90FF ,#0093E9);*/
+    background-image: linear-gradient(transparent , rgba(0, 147, 233, 0.5) ,rgba(0, 147, 233, 0.7) ) , url('2021-07-26.jpg') ;
+    backdrop-filter: blur(5px);
+    background-repeat:no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    
 }
-p.Description{
-    margin-top: 3%;
+/*                                              Register Page!!                                                                      */
+/*Box*/
+.box{
+    width: 500px;
+    height: min-content;
+    color: white;
+    background: /*rgba(0, 147, 233, 0.7)*/ rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px 5px  rgba(0, 0, 0, 0.5) ;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2%;
+    box-sizing: content-box;
+    padding-right: 10px;
+}
+.box input{
+    border: hidden;
+    height: 30px;
+    text-align: center;
+    color: black;
+    border-bottom: 10px black;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.box button{
     font-weight: 600;
-    min-width: 50px;
-    padding-right: 50px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+.box .Register{
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.box p { 
+    margin-top: 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.box a{
+    margin-left: 5px;
+    font-weight: 600;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.box form{
+    display: inline;
+}
+.box input:focus {
+    box-shadow: 2px 2px 10px 5px rgba(0, 147, 233, 1);
+}
+.box h2{
+    font-size: 12px;
+}
+.box h5{
+    padding-bottom: 20px;
+    font-size: 12px;
 }
 
+/*                                                      Sign In Page                                                                     */
 
-/* For Register Page*/
-#fields{
-    margin-top: 2%;
-    text-align: center;   
-    min-height: 250px;
-    margin: auto;
-    margin-top: 10%;
-    width: 25%;
-    box-sizing: border-box;
-    border-color: black;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 2.5%;
+.boxS{
+    width: 500px;
+    height: max-content;
+    color: white;
+    background: /*rgba(0, 147, 233, 0.7)*/ rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 10px 5px  rgba(0, 0, 0, 0.5) ;
+    border-radius: 12px;
+    text-align: center;
+    margin: 2%;
     box-sizing: content-box;
-
+    padding-right: 10px;
 }
-select{
-    width: auto;
-    height: auto;
+.boxS button{
+    font-weight: 600;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+}
+.boxS .Register{
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.boxS p { 
+    margin-top: 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.boxS a{
+    margin-left: 5px;
+    font-weight: 600;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.boxS form{
+    display: inline;
+}
+.boxS input:focus {
+    box-shadow: 2px 2px 10px 5px rgba(0, 147, 233, 1);
+}
+.boxS input{
     border: hidden;
+    height: 30px;
     text-align: center;
     color: black;
     border-bottom: 10px black;
-    outline: none;
-    outline-width: 10px;
-    background-color: lightgrey;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 3px;
-
-}
-input{
-    border: hidden;
-    text-align: center;
-    color: black;
-    border-bottom: 10px black;
-    outline: none;
-    outline-width: 10px;
-    background-color: lightgrey;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 3px;
-}
-#Address{
-    box-sizing: border-box;
-    min-height: 75px;
-    word-wrap: break-word;
-}
-h2.Register{
-    background-color: #42B4BE;
-    color: white;
-    min-height: 50px;
-    box-sizing: border-box;
-    line-height: 50px;
-    text-align: center;
-}
-#RegBtn{
-    cursor: pointer;
-    background-color: #42B4BE;
-    color: white;
-    border: white;
-    height: 25px;
-    border: #3A9DA6;
-    border-radius: 10px;
+    background-color: white;
+    border-radius: 5px;
     padding: 5px;
+    margin: 3px;
+    margin-bottom: 20px;
 }
-
-#SignIn{
-    font-size: 12.5px;
-    cursor: pointer;
-    background-color: #42B4BE;
-    color: white;
-    border: white;
-    height: 25px;
-    border: #3A9DA6;
-    border-radius: 10px;
-    padding: 5px;
-    text-decoration-line: none;
-}
-
-/*    For Sign In page    */
-#SFields{
-    margin-top: 2%;
-    text-align: center;   
-    min-height: 125px;
-    margin: auto;
-    margin-top: 10%;
-    width: 15%;
-    box-sizing: border-box;
-    border-color: black;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 2.5%;
-    box-sizing: content-box;
-
+.boxS h5{
+    font-size: 12px;
+    padding-bottom: 20px;
 }

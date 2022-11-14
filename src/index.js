@@ -91,7 +91,7 @@ function Register(){
 
 
 //for dropdown of year
-let dateDropdown = document.getElementById('year'); 
+/*let dateDropdown = document.getElementById('year'); 
             
 let currentYear = new Date().getFullYear();    
 let earliestYear = 1970;     
@@ -101,4 +101,4 @@ while (currentYear >= earliestYear) {
     dateOption.value = currentYear;        
     dateDropdown.add(dateOption);      
     currentYear -= 1;    
-}
+}*/
