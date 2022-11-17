@@ -1,3 +1,3 @@
 if(document.getElementById('drname') != null){
-    document.getElementById('drname').innerHTML = localStorage.getItem("name")
+    document.getElementById('drname').innerHTML = "Doctor " + localStorage.getItem("name")
 }

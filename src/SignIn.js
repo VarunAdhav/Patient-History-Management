@@ -55,7 +55,7 @@ function SignIn(){
         if (snapshot.exists()) {
           var Name = snapshot.val().name
           console.log(Name);
-          localStorage.setItem("name" , Name)
+          localStorage.setItem("name" , Name);
         } else { 
           console.log("No data available");
         }

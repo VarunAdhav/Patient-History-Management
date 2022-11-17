@@ -4,13 +4,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/Welcome Page.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script type="module" src="./bundle.js"></script>
     <title>Welcome Page</title>
 </head>
 <body class="Welcome">
-    <h2>Welcome to your personal portal</h2>
-    <h3>Doctor </h3><h3 id="drname">Doctor Name</h3>
-    <button>New Patient</button>
-    <button>Search Patient</button>
+    <h2>Welcome to your Personal Portal</h2>
+    <h3 id="drname">Doctor Name</h3>
+    <button class="btn btn-success">NEW PATIENT</button>
+    <div class="newPatient">
+        <form action="post">
+            <input type="text" name="Patient Name" id="PName" placeholder="Patient Name">
+            <input type="text" name="Age" id="age" placeholder="Age">
+            <select name="Gender" id="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Prefer Not to say">Prefer Not Say</option>
+            </select>
+        </form>
+    </div>
+    <button class="btn btn-success">SEARCH PATIENT</button>
 </body>
 </html>
