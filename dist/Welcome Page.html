@@ -12,18 +12,37 @@
 <body class="Welcome">
     <h2>Welcome to your Personal Portal</h2>
     <h3 id="drname">Doctor Name</h3>
-    <button class="btn btn-success">NEW PATIENT</button>
     <div class="newPatient">
         <form action="post">
-            <input type="text" name="Patient Name" id="PName" placeholder="Patient Name">
-            <input type="text" name="Age" id="age" placeholder="Age">
-            <select name="Gender" id="Gender">
+            <input type="text" name="Patient Name" id="pName" placeholder="Patient Name">
+            <input type="text" name="Phone Number" id="pPhno" placeholder="Phone Number">
+            <input type="text" name="Age" id="pAge" placeholder="Age">
+            <select name="Gender" id="pGender">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Prefer Not to say">Prefer Not Say</option>
             </select>
+            <input type="text" id="pfHistory" placeholder="Symtoms">
         </form>
     </div>
-    <button class="btn btn-success">SEARCH PATIENT</button>
+    <button class="btn btn-success" id="New Patient">ADD PATIENT</button> <br>
+    <div class="searchpatient">
+        <form action="post">
+            <label for="phonenumber">Please Enter the asked credentials of the Patient who you want to search....</label><br>
+            
+            <input type="text" id="Name" placeholder="Patient Name"><br>
+            <input type="text" name="phonenumber" id="Phno" placeholder="Phone Number">
+        </form>
+    </div>
+    <button class="btn btn-success" id="Search Patient">SEARCH PATIENT</button>
+    <!-- <button class="btn btn-success" id="ShowEntry">SHOW ENTRY FORM</button> -->
+    <p style="display: none;" class="History" id="History">History Of the Patient will displayed here</p>
+    
+    <div style="display: none;" id="NewEntryForm" class="historyform">
+        <form   action="post">
+            <input type="text" name="NewHistory" id="NewHistory" placeholder="Add new Entry to History">
+            <button class="btn btn-success" id="AddNewEntry">ADD ENTRY</button>
+        </form>
+    </div>
 </body>
 </html>

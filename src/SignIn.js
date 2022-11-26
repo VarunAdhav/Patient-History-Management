@@ -40,6 +40,7 @@ if(document.getElementById("SignBtn") != null){
 }*/
 function SignIn(){
     console.log("In");
+    localStorage.clear();
     const Email = document.getElementById('semail').value;
     const Password = document.getElementById('sPassword').value;
     signInWithEmailAndPassword(auth, Email, Password)
@@ -51,10 +52,12 @@ function SignIn(){
       var userId = user.uid;
       console.log(userId , auth.currentUser.uid)
       console.log(userId);
+      localStorage.setItem("uid" , userId)
       get(child(dbRef, `Doctors/${userId}`)).then((snapshot) => {
         if (snapshot.exists()) {
           var Name = snapshot.val().name
           console.log(Name);
+          
           localStorage.setItem("name" , Name);
         } else { 
           console.log("No data available");

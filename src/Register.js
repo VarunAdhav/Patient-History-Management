@@ -53,13 +53,17 @@ function Register(){
     }
 
     createUserWithEmailAndPassword(auth , Email , Password);
-        var Doctor = auth.currentUser;
-        const userId = Doctor.uid;
-
+        
+    var Doctor = auth.currentUser;
+    if( userId == null){
+        alert('Sorry something went worng...Please press the Register Button Again')
+    }
+    var userId = Doctor.uid;
+    console.log(userId);
     set(ref(Database, 'Doctors/' + userId), {
         email: Email,
         address: Address,
-        name: Name,
+        name: Name
     });
 
     alert("User Created Successfully!!");
