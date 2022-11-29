@@ -111,7 +111,7 @@ function SearchPatient(){
     get(child(dbRef, `Doctors/${userId}/Patients/${PhoneNumber+Name}`)).then((snapshot) => {
         if (snapshot.exists()) {
           var history = snapshot.val().History;
-          history = Object.entries(history)
+          history = Object.keys(history) + " : " + Object.values(history)
           console.log(typeof(history));
           //alert('Patient Found')
           
